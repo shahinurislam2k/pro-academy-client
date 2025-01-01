@@ -1,6 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import ErrorPage from "../pages/errorPage/ErrorPage";
+import Home from "../pages/home/Home";
+import Assignments from "../pages/assignments/Assignments";
+import PendingAssignments from "../pages/pendingAssignments/PendingAssignments";
 
 const Router = createBrowserRouter ([
     {
@@ -10,7 +13,15 @@ const Router = createBrowserRouter ([
       children:[
         {
             path: '/',
-            element: <h1>Hello Home</h1>
+            element:<Home></Home>,
+        },
+        {
+            path: 'assignments',
+            element: <Assignments></Assignments>,
+        },
+        {
+            path: 'pendingAssignments',
+            element: <PendingAssignments></PendingAssignments>,
         },
       ]
     },
