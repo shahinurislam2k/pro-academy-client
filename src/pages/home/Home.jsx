@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
-import NavBar from "../../components/NavBar";
+import Banner from "./banner/Banner";
+import Features from "./features/Features";
 
 const Home = () => {
   return (
@@ -7,7 +8,9 @@ const Home = () => {
       <Helmet>
         <title>Pro Academy - Home</title>
       </Helmet>
-      <h1>Hello</h1>
+      <Banner></Banner>
+      <Features></Features>
+      
     </div>
   );
 };

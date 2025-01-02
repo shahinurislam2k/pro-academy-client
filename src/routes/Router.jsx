@@ -23,6 +23,10 @@ const Router = createBrowserRouter ([
             path: 'pendingAssignments',
             element: <PendingAssignments></PendingAssignments>,
         },
+        {
+            path: 'createAssignment',
+            element: <h1>Hello Create Assignment</h1>,
+        },
       ]
     },
   ]);
